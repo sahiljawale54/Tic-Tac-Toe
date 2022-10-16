@@ -1,4 +1,5 @@
 let music = new Audio("music/music.mp3")
+music.play()
 let audioturn = new Audio("music/ting.mp3")
 let gameover = new Audio("music/gameover.mp3")
 let turn = "X"
@@ -34,7 +35,7 @@ const checkWin = ()=>{
 }
 
 // Game Logic
-music.play()
+
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element =>{
     let boxtext = element.querySelector('.boxtext');
